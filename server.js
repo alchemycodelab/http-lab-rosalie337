@@ -3,7 +3,12 @@ const net = require('net');
 //established connection handler
 const server = net.createServer(client => {
   console.log('Client connected!')
-//callback function is evoked
+  //callback function is evoked
+  
+  //addEventListener('click', event => {})};
+  client.on('data', data => {
+  
+  });
 });
 
 server.listen(7890, () => {
