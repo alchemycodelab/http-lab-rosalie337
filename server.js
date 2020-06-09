@@ -14,10 +14,10 @@ const server = net.createServer(client => {
     
     client.end(`HTTP/1.1 200 OK
 Date: Mon, 08 June 2020 23:40 GMT
-Content-Length: 5
-Context-Type: text/plain
+Content-Length: 14
+Context-Type: text/html
 
-hello`);
+<h1>hello</h1>`);
     //send a response the browser understands
   });
 });
