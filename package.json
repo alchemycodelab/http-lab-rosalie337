@@ -7,7 +7,7 @@
     "test": "jest --verbose --runInBand",
     "test:watch": "npm run test -- --watch",
     "start": "node server.js",
-    "start:watch": "nodemon server.js"
+    "start:watch": "node server.js"
   },
   "jest": {
     "testEnvironment": "node"

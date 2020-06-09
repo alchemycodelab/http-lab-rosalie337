@@ -1,5 +1,9 @@
-const app = require('./lib/app');
+const net = require('net');
 
-app.listen(7890, () => {
+const server = net.createServer(() => {
+
+});
+
+server.listen(7890, () => {
   console.log('Application started!');
 });
