@@ -11,6 +11,14 @@ const server = net.createServer(client => {
   
     console.log(data.toString()); 
     //received data and convert to a string 
+    
+    client.end(`HTTP/1.1 200 OK
+Date: Mon, 08 June 2020 23:40 GMT
+Content-Length: 5
+Context-Type: text/plain
+
+hello`);
+    //send a response the browser understands
   });
 });
 
