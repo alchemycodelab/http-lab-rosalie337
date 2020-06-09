@@ -1,7 +1,9 @@
 const net = require('net');
 
-const server = net.createServer(() => {
-
+//established connection handler
+const server = net.createServer(client => {
+  console.log('Client connected!')
+//callback function is evoked
 });
 
 server.listen(7890, () => {
