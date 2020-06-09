@@ -8,7 +8,9 @@ const server = net.createServer(client => {
   //addEventListener('click', event => {})};
   client.on('data', data => {
   // a request was just sent
-    console.log(data);
+  
+    console.log(data.toString()); 
+    //received data and convert to a string 
   });
 });
 
