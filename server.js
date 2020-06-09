@@ -7,7 +7,8 @@ const server = net.createServer(client => {
   
   //addEventListener('click', event => {})};
   client.on('data', data => {
-  
+  // a request was just sent
+    console.log(data);
   });
 });
 
