@@ -8,22 +8,19 @@ const server = net.createServer(client => {
   //addEventListener('click', event => {})};
   client.on('data', data => {
   // a request was just sent
-  
-    console.log(data.toString()); 
-    //received data and convert to a string 
     
-    const [ , path] = data.toString().split(' ');
+    const [, path] = data.toString().split(' ');
     //if I got to '/' send an h1 with hello
     if(path ==='/') {
       const body = '<h1>Hello!<h1>';
     
       //res.send(body) constructed response below
       client.end(`HTTP/1.1 200 OK
-    Date: Mon, 08 June 2020 23:40 GMT
-    Content-Length: ${body.length}
-    Context-Type: text/html
-    
-    ${body}`);
+Date: Mon, 08 June 2020 23:40 GMT
+Content-Length: ${body.length}
+Context-Type: text/html
+
+${body}`);
         //send a response the browser understands
       }
 
@@ -38,11 +35,11 @@ const server = net.createServer(client => {
       
       //res.json(body) constructed response below
       client.end(`HTTP/1.1 200 OK
-      Date: Mon, 08 June 2020 23:40 GMT
-      Content-Length: ${body.length}
-      Context-Type: application/json
-      
-      ${body}`);
+Date: Mon, 08 June 2020 23:40 GMT
+Content-Length: ${body.length}
+Context-Type: application/json
+
+${body}`);
     }
       //send a response the browser understands
   });
