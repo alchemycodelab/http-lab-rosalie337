@@ -1,13 +1,13 @@
 {
   "name": "http-lab",
   "version": "1.0.0",
-  "description": "",
+  "description": "Using only the net module I created an HTTP server that responds with different messages based on path.",
   "main": "server.js",
   "scripts": {
     "test": "jest --verbose --runInBand",
     "test:watch": "npm run test -- --watch",
     "start": "node server.js",
-    "start:watch": "nodemon server.js"
+    "start:watch": "node server.js"
   },
   "jest": {
     "testEnvironment": "node"
@@ -22,5 +22,16 @@
     "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alchemycodelab/http-lab-rosalie337.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alchemycodelab/http-lab-rosalie337/issues"
+  },
+  "homepage": "https://github.com/alchemycodelab/http-lab-rosalie337#readme"
 }
