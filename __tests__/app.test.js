@@ -8,7 +8,7 @@ describe('app routes', () => {
     expect(res.text).toEqual('hi');
   });
 
-  it('should POST status code 200 in plain textq with request body ', async() => {
+  it('should POST status code 200 in plain texts with request body ', async() => {
     const res = await request(app)
       .post('/echo')
       .send('hi');
